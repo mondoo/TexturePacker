@@ -156,6 +156,7 @@ namespace Packer.Classes
             MagickGeometry size = new MagickGeometry(resizeWidth - padding, resizeHeight - padding);
             size.IgnoreAspectRatio = true;
             imageToApply.Resize(size);
+            imageToApply.ColorSpace = ColorSpace.LinearGray;
 
             workingImage.CopyPixels(imageToApply, size, (x * resizeWidth) + imgPadding, (y * resizeHeight) + imgPadding, channel);
         }

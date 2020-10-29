@@ -23,7 +23,7 @@
             <Label Padding="0,2,5,2">Resolution:</Label>
             <ComboBox Name="Sizes" />
             <Label Padding="0,2,5,2">Padding:</Label>
-            <TextBox Name="Padding" Margin="0,0,0,10">0</TextBox>
+            <TextBox Name="PaddingControl" Margin="0,0,0,10">0</TextBox>
             <WrapPanel>
                 <Button Name="AddFile" HorizontalAlignment="Left" Margin="0,0,5,0" Padding="5">Add Images</Button>
                 <Button Name="UpdatePreview" HorizontalAlignment="Left" Margin="0,0,5,0" Padding="5">Update Preview</Button>

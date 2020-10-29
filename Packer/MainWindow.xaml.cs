@@ -35,7 +35,7 @@ namespace Packer
             AddFile.Click += AddFile_Click;
             UpdatePreview.Click += UpdatePreview_Click;
             Save.Click += Save_Click;
-            Padding.TextChanged += Padding_TextChanged;
+            PaddingControl.TextChanged += Padding_TextChanged;
 
             Sizes.Items.Add(128);
             Sizes.Items.Add(256);
@@ -96,12 +96,12 @@ namespace Packer
 
         private void Padding_TextChanged(object sender, EventArgs e)
         {
-            if (System.Text.RegularExpressions.Regex.IsMatch(Padding.Text, "[^0-9]"))
+            if (System.Text.RegularExpressions.Regex.IsMatch(PaddingControl.Text, "[^0-9]"))
             {
-                Padding.Text = currentPaddingText;
+                PaddingControl.Text = currentPaddingText;
             }
 
-            currentPaddingText = Padding.Text;
+            currentPaddingText = PaddingControl.Text;
         }
     }
 }
