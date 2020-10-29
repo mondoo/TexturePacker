@@ -1,7 +1,6 @@
 ﻿using Packer.MVVM.Model;
 using System.Collections.ObjectModel;
 using Packer.Classes;
-using System.Diagnostics;
 using System.Windows.Input;
 
 namespace Packer.MVVM.ViewModel
